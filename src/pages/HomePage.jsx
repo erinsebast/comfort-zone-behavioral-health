@@ -57,6 +57,7 @@ export default function HomePage() {
   return (
     <>
         <section id="home" className="hero-section" aria-labelledby="hero-heading">
+          <img className="hero-background" src={heroHills} alt="" aria-hidden="true" width="1600" height="1000" fetchPriority="high" />
           <div className="hero-content">
             <p className="eyebrow">Comfort Zone Behavioral Health · Greater Houston</p>
             <h1 id="hero-heading">
@@ -79,19 +80,7 @@ export default function HomePage() {
             <p className="hero-availability">In-person &amp; telehealth visits by appointment</p>
           </div>
 
-          <figure className="hero-photo">
-            <img
-              src={heroHills}
-              alt="Rolling green hills and trees beneath a softly lit sky."
-              width="1600"
-              height="1000"
-              fetchPriority="high"
-            />
-            <figcaption>
-              <span className="eyebrow">Care centered on you</span>
-              <p>A welcoming space. An individual approach.</p>
-            </figcaption>
-          </figure>
+
         </section>
 
         <section className="intro-section section-wrap">
