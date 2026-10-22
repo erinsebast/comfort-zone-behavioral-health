@@ -1,10 +1,12 @@
 import { useEffect } from 'react'
 import HomePage from './pages/HomePage.jsx'
 import ContactPage from './pages/ContactPage.jsx'
+import ProvidersPage from './pages/ProvidersPage.jsx'
 import { PrivacyPage, PrivacyNoticePage, TermsPage } from './pages/LegalPages.jsx'
 
 const pages = {
   '/': { component: HomePage, title: 'Comfort Zone Behavioral Health | Greater Houston' },
+  '/providers': { component: ProvidersPage, title: 'Meet Our Providers | Comfort Zone Behavioral Health' },
   '/contact': { component: ContactPage, title: 'Contact | Comfort Zone Behavioral Health' },
   '/privacy': { component: PrivacyPage, title: 'Website Privacy | Comfort Zone Behavioral Health' },
   '/privacy-notice': { component: PrivacyNoticePage, title: 'Privacy Practices | Comfort Zone Behavioral Health' },
@@ -39,6 +41,7 @@ function App() {
         <nav className="nav-links" aria-label="Main navigation">
           <a href="/#about">About</a>
           <a href="/#services">Services</a>
+          <a href="/providers/" aria-current={path === '/providers' ? 'page' : undefined}>Meet Our Providers</a>
           <a href="/contact/" aria-current={path === '/contact' ? 'page' : undefined}>Contact</a>
         </nav>
         <a className="header-cta" href="/contact/">Schedule</a>

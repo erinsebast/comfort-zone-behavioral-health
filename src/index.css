@@ -594,7 +594,7 @@ textarea:focus {
   .nav-links {
     grid-column: 1 / -1;
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 4px;
   }
 
@@ -1241,4 +1241,33 @@ input, select, textarea {
   .insurance-placeholder-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
   .insurance-placeholder { min-height: 125px; }
   .insurance-placeholder span { font-size: .85rem; }
+}
+
+.providers-section { max-width: 1360px; margin-inline: auto; }
+.providers-intro { max-width: 760px; margin-bottom: 40px; }
+.providers-preview-note { font-size: .88rem; color: var(--teal-dark); }
+.providers-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+.provider-card { overflow: hidden; min-width: 0; border: 1px solid var(--line); border-radius: 16px; background: var(--white); }
+.provider-photo-placeholder { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 18px; min-height: 230px; padding: 24px; background: linear-gradient(140deg, #e7f0eb, #e6eff1); color: #58786e; }
+.provider-photo-placeholder span { font-size: .85rem; }
+.provider-card-copy { padding: clamp(24px, 3vw, 36px); }
+.provider-placeholder-label { display: inline-block; margin-bottom: 12px; color: var(--teal-dark); font-size: .76rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
+.provider-card h2 { font-size: 1.4rem; line-height: 1.3; margin-bottom: 14px; }
+.provider-card dl { margin: 24px 0 0; padding-top: 20px; border-top: 1px solid var(--line); }
+.provider-card dl > div + div { margin-top: 16px; }
+.provider-card dt { font-weight: 600; font-size: .9rem; line-height: 1.5; }
+.provider-card dd { margin: 4px 0 0; color: var(--muted); font-size: .9rem; line-height: 1.6; }
+.providers-contact { margin-top: 48px; padding: clamp(24px, 4vw, 40px); border-radius: 12px; background: var(--soft); }
+.providers-contact h2 { font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.25; }
+
+@media (min-width: 641px) and (max-width: 1100px) {
+  .site-header { flex-wrap: wrap; }
+  .nav-links { order: 3; width: 100%; flex-wrap: wrap; }
+}
+
+@media (max-width: 640px) {
+  .providers-grid { grid-template-columns: minmax(0, 1fr); }
+  .provider-photo-placeholder { min-height: 200px; }
+  .nav-links a { padding: 8px; line-height: 1.3; }
+  section[id], #main-content { scroll-margin-top: 200px; }
 }

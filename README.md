@@ -33,6 +33,7 @@ Each page has its own HTML entry, so do not add a catch-all rewrite to `/index.h
 ## Pages
 
 - `/` — homepage with About and Services sections
+- `/providers/` — clearly labeled provider profile placeholders
 - `/contact/` — practice contact information and form preview
 - `/privacy/` — draft website privacy policy
 - `/privacy-notice/` — privacy notice information

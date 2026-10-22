@@ -11,6 +11,7 @@ export default defineConfig({
       input: {
         home: entry('./index.html'),
         contact: entry('./contact/index.html'),
+        providers: entry('./providers/index.html'),
         privacy: entry('./privacy/index.html'),
         privacyNotice: entry('./privacy-notice/index.html'),
         terms: entry('./terms/index.html'),
