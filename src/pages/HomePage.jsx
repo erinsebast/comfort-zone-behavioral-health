@@ -1,4 +1,4 @@
-import heroGarden from '../assets/hero-garden.webp'
+import heroHills from '../assets/hero-hills.webp'
 
 const services = [
   {
@@ -81,10 +81,10 @@ export default function HomePage() {
 
           <figure className="hero-photo">
             <img
-              src={heroGarden}
-              alt="A sunlit path winding through a peaceful green garden."
-              width="1024"
-              height="1280"
+              src={heroHills}
+              alt="Rolling green hills and trees beneath a softly lit sky."
+              width="1600"
+              height="1000"
               fetchPriority="high"
             />
             <figcaption>
