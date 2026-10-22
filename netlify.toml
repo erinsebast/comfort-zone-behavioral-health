@@ -1,0 +1,10 @@
+# The GitHub repository root is the website's base directory.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "24"
+
+# Each page has its own HTML entry. No catch-all SPA rewrite is needed.
+# Form handling is intentionally not enabled; the contact form stays a preview.
