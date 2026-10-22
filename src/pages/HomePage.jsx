@@ -1,3 +1,5 @@
+import heroGarden from '../assets/hero-garden.webp'
+
 const services = [
   {
     title: 'Psychiatric Evaluation',
@@ -77,33 +79,19 @@ export default function HomePage() {
             <p className="hero-availability">In-person &amp; telehealth visits by appointment</p>
           </div>
 
-          <aside className="hero-panel" aria-label="Clinic highlights">
-            <svg className="hero-landscape" viewBox="0 0 520 560" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true">
-              <defs>
-                <linearGradient id="sky" x1="260" y1="0" x2="260" y2="560" gradientUnits="userSpaceOnUse">
-                  <stop stopColor="#d6e9ee" />
-                  <stop offset="1" stopColor="#edf2e8" />
-                </linearGradient>
-                <linearGradient id="hills" x1="0" y1="330" x2="520" y2="560" gradientUnits="userSpaceOnUse">
-                  <stop stopColor="#a6c8bd" />
-                  <stop offset="1" stopColor="#5e948d" />
-                </linearGradient>
-              </defs>
-              <path fill="url(#sky)" d="M0 0h520v560H0z" />
-              <circle cx="365" cy="142" r="66" fill="#f9f8e9" opacity=".9" />
-              <path d="M0 340C100 215 183 254 285 320c99 64 150-80 235-96v336H0Z" fill="#c4d9d1" />
-              <path d="M0 390c118 45 172-89 290-72 101 15 144 102 230 60v182H0Z" fill="url(#hills)" />
-              <path d="M0 455c122-64 210-4 310 38 82 34 157 1 210-27v94H0Z" fill="#477e79" opacity=".6" />
-              <path d="M182 560c-3-57 144-73 123-116-15-30-84-32-75-63 5-17 29-27 44-33" stroke="#f0f4e8" strokeWidth="3" opacity=".7" />
-            </svg>
-            <div className="hero-panel-copy">
-            <p>Care centered on you.</p>
-            <ul>
-              <li>Compassionate, individualized support</li>
-              <li>A welcoming, stigma-free environment</li>
-            </ul>
-            </div>
-          </aside>
+          <figure className="hero-photo">
+            <img
+              src={heroGarden}
+              alt="A sunlit path winding through a peaceful green garden."
+              width="1024"
+              height="1280"
+              fetchPriority="high"
+            />
+            <figcaption>
+              <span className="eyebrow">Care centered on you</span>
+              <p>A welcoming space. An individual approach.</p>
+            </figcaption>
+          </figure>
         </section>
 
         <section className="intro-section section-wrap">
