@@ -75,6 +75,12 @@ export function TermsPage() {
         <p>Visiting this website, sending an inquiry, or requesting an appointment does not establish a provider-patient relationship or guarantee acceptance for treatment. A treatment relationship begins only after the practice accepts you for care and the required intake and consent processes are completed.</p>
         <p>The contact form is currently a preview and cannot be submitted. Call the practice to discuss availability, service fit, forms, and insurance or payment arrangements. A phone or email inquiry does not confirm an appointment.</p>
       </section>
+      <section aria-labelledby="terms-patient-policies">
+        <h2 id="terms-patient-policies">Before your first visit</h2>
+        <p>Ask the practice for its patient intake materials, Consent for Treatment, Financial Responsibility Policy, and Office Policies &amp; Expectations. Review payment expectations, insurance details, and missed-appointment terms with the practice before scheduling.</p>
+        <p>For telehealth visits, ask to review the Telehealth Consent, including technology risks, patient location requirements, and the emergency plan for your visit.</p>
+        <p>These website terms do not replace the practice’s patient forms or consent documents. For questions about the Notice of Privacy Practices or release-of-information permissions, contact the practice before sharing clinical information.</p>
+      </section>
       <section aria-labelledby="terms-emergency">
         <h2 id="terms-emergency">Emergency and urgent concerns</h2>
         <p>Comfort Zone Behavioral Health is not an emergency or crisis response service. If you or someone else is in immediate danger, call 911 or go to the nearest emergency room. Do not use this website, email, voicemail, text messages to the practice, or appointment requests for emergencies.</p>
