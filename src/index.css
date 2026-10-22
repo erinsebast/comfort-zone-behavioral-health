@@ -156,14 +156,24 @@ button:hover,
   font-weight: 700;
 }
 
-.nav-links a:hover,
-.header-cta {
+.nav-links a:hover {
   background: var(--soft);
   color: var(--teal-dark);
 }
 
 .header-cta {
-  color: var(--teal-dark);
+  justify-content: center;
+  min-height: 48px;
+  padding-inline: 24px;
+  background: var(--teal-dark);
+  color: var(--white);
+  box-shadow: 0 6px 18px rgba(32, 93, 90, 0.2);
+  transition: background 180ms ease, box-shadow 180ms ease;
+}
+
+.header-cta:hover {
+  background: #173f3d;
+  box-shadow: 0 8px 22px rgba(32, 93, 90, 0.28);
 }
 
 .hero-section {
@@ -572,7 +582,7 @@ textarea:focus {
 
   .header-cta {
     justify-self: end;
-    padding-inline: 12px;
+    padding-inline: 18px;
   }
 
   .hero-section,
