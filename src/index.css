@@ -1199,3 +1199,65 @@ input, select, textarea {
 @media (max-width: 600px) {
   .contact-input-grid { grid-template-columns: minmax(0, 1fr); }
 }
+
+.insurance-section {
+  background:
+    radial-gradient(ellipse at 90% 0%, #e8f1ee 0%, transparent 60%),
+    #f2f6f4;
+  border-top: 1px solid var(--line);
+}
+
+.insurance-heading-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px 48px;
+  margin-bottom: 28px;
+}
+
+.insurance-heading-row .section-heading {
+  max-width: 720px;
+  margin-bottom: 0;
+}
+
+.insurance-heading-row h2 {
+  font-size: clamp(1.85rem, 3.5vw, 2.8rem);
+}
+
+.insurance-heading-row p:last-child { margin-bottom: 0; }
+.insurance-heading-row > a { flex-shrink: 0; }
+
+.insurance-placeholder-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.insurance-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 140px;
+  padding: 20px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(255,255,255,.9);
+  text-align: center;
+}
+
+.insurance-placeholder svg { color: #789b90; margin-bottom: 4px; }
+.insurance-placeholder span { font-weight: 600; color: #4d6761; }
+.insurance-placeholder small { color: var(--muted); font-size: .8rem; }
+.insurance-preview-note { margin: 20px 0 0; font-size: .85rem; max-width: 85ch; }
+
+@media (max-width: 940px) {
+  .insurance-heading-row { flex-direction: column; align-items: flex-start; gap: 12px; }
+}
+
+@media (max-width: 640px) {
+  .insurance-placeholder-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .insurance-placeholder { min-height: 125px; }
+  .insurance-placeholder span { font-size: .85rem; }
+}

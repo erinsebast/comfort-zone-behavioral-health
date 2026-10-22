@@ -258,6 +258,36 @@ export default function HomePage() {
           </div>
         </section>
 
+        <section className="insurance-section section-wrap" id="insurance" aria-labelledby="insurance-heading">
+          <div className="insurance-heading-row">
+            <div className="section-heading compact">
+              <p className="eyebrow">Insurance &amp; payment</p>
+              <h2 id="insurance-heading">Let’s make the next step clearer.</h2>
+              <p>
+                Insurance information is being confirmed. Please contact the practice
+                to ask about plan participation and payment options before your visit.
+              </p>
+            </div>
+            <a className="about-services-link" href="/contact/">Ask about coverage <span aria-hidden="true">→</span></a>
+          </div>
+          <div className="insurance-placeholder-grid" aria-hidden="true">
+            {Array.from({ length: 6 }, (_, index) => (
+              <div className="insurance-placeholder" key={index}>
+                <svg width="32" height="26" viewBox="0 0 32 26" fill="none">
+                  <rect x="1" y="1" width="30" height="24" rx="5" stroke="currentColor" strokeWidth="1.5" />
+                  <path d="M8 9h5m-2.5-2.5v5M8 18h16M19 9h5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                </svg>
+                <span>Insurance plan</span>
+                <small>Details to come</small>
+              </div>
+            ))}
+          </div>
+          <p className="insurance-preview-note">
+            Layout preview only. The cards above do not represent confirmed insurance participation.
+            Plan names and logos will be added once verified.
+          </p>
+        </section>
+
         <section className="cta-band">
           <div>
             <p className="eyebrow">Take the first step</p>
