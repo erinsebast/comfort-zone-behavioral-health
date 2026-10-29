@@ -235,6 +235,7 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Insurance section paused: the practice is not yet credentialed with insurers.
         <section className="insurance-section section-wrap" id="insurance" aria-labelledby="insurance-heading">
           <div className="insurance-heading-row">
             <div className="section-heading compact">
@@ -264,6 +265,7 @@ export default function HomePage() {
             Plan names and logos will be added once verified.
           </p>
         </section>
+        */}
 
         <section className="cta-band">
           <div>
