@@ -53,16 +53,17 @@ export default function ContactPage() {
             </aside>
           </div>
 
-          <form className="contact-form" aria-labelledby="contact-form-heading" aria-describedby="contact-form-status">
+          <form className="contact-form" aria-labelledby="contact-form-heading" aria-describedby="contact-form-status" onSubmit={(event) => event.preventDefault()}>
             <div className="contact-form-header">
               <span className="form-preview-badge">Form preview</span>
               <h2 id="contact-form-heading">Let’s connect.</h2>
               <p>Tell us a little about how we can help.</p>
             </div>
             <p className="contact-form-status" id="contact-form-status">
-              Online requests aren’t available yet. Please call <a href="tel:18323225462">832-322-5462</a> to get in touch.
+              Preview only — you can try the fields below, but no request will be sent.
+              Please use sample information. To get in touch, call <a href="tel:18323225462">832-322-5462</a>.
             </p>
-            <fieldset className="contact-fields" disabled>
+            <fieldset className="contact-fields">
               <legend className="visually-hidden">Contact details and preferences</legend>
               <div className="contact-input-grid">
                 <label className="form-full-width">
@@ -141,7 +142,7 @@ export default function ContactPage() {
                   requests to discuss availability, service fit, intake forms,
                   insurance or payment information, and next steps.
                 </p>
-                <fieldset className="contact-consents" disabled>
+                <fieldset className="contact-consents">
                   <legend>Acknowledgments for online requests</legend>
                   <label><input type="checkbox" name="notEmergency" /> <span>I understand this is not for emergencies.</span></label>
                   <label><input type="checkbox" name="noTreatmentRelationship" /> <span>I understand a request does not establish a treatment relationship.</span></label>

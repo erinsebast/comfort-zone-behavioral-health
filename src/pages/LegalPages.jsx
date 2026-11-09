@@ -23,7 +23,7 @@ export function PrivacyPage() {
       <section aria-labelledby="privacy-collection">
         <h2 id="privacy-collection">Information you choose to share</h2>
         <p>If you call or email the practice, you may provide your name, contact details, and general questions about services or appointments. Information provided for care, insurance, or billing is handled through the practice’s intake and clinical processes.</p>
-        <p>The contact form on this website is currently a disabled preview. It cannot accept or send a request. Call the practice for appointment availability and next steps.</p>
+        <p>The contact form on this website is an interactive preview for sample information only. It cannot send a request. Call the practice for appointment availability and next steps.</p>
       </section>
       <section aria-labelledby="privacy-use">
         <h2 id="privacy-use">How information may be used</h2>
