@@ -5,7 +5,7 @@ import ProvidersPage from './pages/ProvidersPage.jsx'
 import { PrivacyPage, PrivacyNoticePage, TermsPage } from './pages/LegalPages.jsx'
 
 const pages = {
-  '/': { component: HomePage, title: 'Comfort Zone Behavioral Health | Greater Houston' },
+  '/': { component: HomePage, title: 'Comfort Zone Behavioral Health' },
   '/providers': { component: ProvidersPage, title: 'Meet Our Providers | Comfort Zone Behavioral Health' },
   '/contact': { component: ContactPage, title: 'Contact | Comfort Zone Behavioral Health' },
   '/privacy': { component: PrivacyPage, title: 'Website Privacy | Comfort Zone Behavioral Health' },
