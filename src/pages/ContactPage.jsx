@@ -1,4 +1,8 @@
+import { useState } from 'react'
+
 export default function ContactPage() {
+  const [paymentMethod, setPaymentMethod] = useState('')
+
   return (
         <section className="contact-section section-wrap" id="contact" aria-labelledby="contact-heading">
           <div>
@@ -93,6 +97,27 @@ export default function ContactPage() {
                     <option>No preference</option>
                   </select>
                 </label>
+                <label className="form-full-width">
+                  Payment preference
+                  <select name="paymentMethod" value={paymentMethod} onChange={(event) => setPaymentMethod(event.target.value)}>
+                    <option value="" disabled>Select a payment preference</option>
+                    <option value="self-pay">Self-pay</option>
+                    <option value="insurance">Insurance</option>
+                  </select>
+                </label>
+                {paymentMethod === 'insurance' && (
+                  <div className="form-full-width">
+                    <label>
+                      Insurance company or plan name
+                      <input type="text" name="insuranceName" placeholder="Enter your insurance company or plan name" maxLength={150} aria-describedby="insurance-name-note" />
+                    </label>
+                    <p className="insurance-name-note" id="insurance-name-note">
+                      The practice is not yet credentialed with insurance plans. Listing your
+                      insurance does not confirm plan acceptance or coverage. Please do not
+                      include a member ID, policy number, or other insurance identifiers.
+                    </p>
+                  </div>
+                )}
                 <label className="form-full-width">
                   Your message
                   <textarea name="message" rows="3" placeholder="A general question about services or availability…" />
