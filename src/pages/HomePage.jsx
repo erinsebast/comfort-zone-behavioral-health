@@ -51,6 +51,10 @@ const conditions = [
   'Panic disorders',
   'Substance-related concerns',
   'Adjustment disorders',
+  'Schizophrenia',
+  'Oppositional defiant disorder (ODD)',
+  'Disruptive mood dysregulation disorder (DMDD)',
+  'Autism spectrum disorder (ASD)',
 ]
 
 export default function HomePage() {
