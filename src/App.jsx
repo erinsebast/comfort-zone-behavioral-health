@@ -35,7 +35,7 @@ function App() {
       <a className="skip-link" href="#main-content">Skip to content</a>
       <header className="site-header">
         <a className="brand" href="/#home" aria-label="Comfort Zone Behavioral Health home">
-          <span className="brand-mark">CZ</span>
+          <img className="brand-logo-symbol" src="/comfort-zone-symbol.webp" alt="" width="64" height="52" />
           <span><strong>Comfort Zone</strong><small>Behavioral Health</small></span>
         </a>
         <nav className="nav-links" aria-label="Main navigation">
@@ -58,7 +58,12 @@ function App() {
 
       <footer className="site-footer">
         <div className="footer-top">
-          <div><p>Comfort Zone Behavioral Health, PLLC</p><p>Serving clients throughout Greater Houston</p></div>
+          <div className="footer-brand">
+            <a href="/#home" aria-label="Comfort Zone Behavioral Health home">
+              <img className="footer-logo" src="/comfort-zone-logo.webp" alt="Comfort Zone Behavioral Health" width="160" height="160" loading="lazy" />
+            </a>
+            <div><p>Comfort Zone Behavioral Health, PLLC</p><p>Serving clients throughout Greater Houston</p></div>
+          </div>
           <nav className="footer-links" aria-label="Footer navigation">
             <a href="/contact/">Contact</a>
             <a href="/privacy/">Website Privacy</a>
